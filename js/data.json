@@ -2,7 +2,7 @@
   "steps": [
     {
       "name": "Le bateau",
-      "description": "problème à résoudre",
+      "description": "Des pirates ont volé un bijou à votre famille, vous vous êtes fixé comme mission de récupérer ce bijou volé sur leur vaisseau, le Long Ben. Lorsque vous arrivez au port un pirate dort à côté de la passerelle qui accède au pont.",
       "img_src": "pirate.jpg",
       "option1": {
         "description": "Vous pouvez tenter de passer silencieusement à côté de lui en prenant le risque de le réveiller",
