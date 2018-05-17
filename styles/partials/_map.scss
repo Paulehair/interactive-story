@@ -1,0 +1,46 @@
+.Map {
+  width: 100%;
+  position: relative;
+  &__centerArea {
+    width: 100%;
+    position: absolute;
+  }
+  &__mapContainer {
+    width: 935px;
+    height: 750px;
+    position: relative;
+    overflow: hidden;
+  }
+  &__mapItem {
+    width: 100%;
+  }
+  &__sceneContainer {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+  }
+  &__sceneImg {
+    width: 99%;
+    margin: 8px 0 0 5px;
+  }
+  &__instructionsContainer {
+    position: absolute;
+    right: -200;
+    z-index: 10;
+  }
+  &__instructionsBox {
+    width: 50%;
+  }
+  &__instructionsTxt {
+    position: absolute;
+    top: 40;
+    left: 50;
+    width: 40%;
+    line-height: 25px;
+  }
+  &__InstructionsImg {
+    width: 100%;
+  }
+}

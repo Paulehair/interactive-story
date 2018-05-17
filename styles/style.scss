@@ -1,0 +1,25 @@
+// global
+@import './global/reset';
+@import './global/variables';
+
+// mixins
+@import './mixins/forsize';
+
+// partials
+@import './partials/map';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Trade Winds', cursive;
+  font-size: 18px;
+  background-image: url('../assets/img/background.svg');
+  margin: 20px 0 0 50px;
+}
