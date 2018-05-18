@@ -1,31 +1,35 @@
-var data;
+fetch('./js/data.json')
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
+      // Examine the text in the response
+      response.json().then(function(data) {
+        var start = document.querySelector('#game-start');
+        start.addEventListener('click', function () {
+          start.classList.remove('is-open');
+          displayText(data.steps[0].description);
+        });
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
 
-function ajaxRequest() {
-  var query = new XMLHttpRequest();
-  query.open("POST", "./js/data.json", true);
-  query.onreadystatechange = function () {
-    if (query.readyState != 4 || query.status != 200) return;
-    data = JSON.parse(query.responseText);
-  };
-  query.send();
+function displayText(param) {
+  var textArea = document.querySelector('.Map__instructionsTxt');
+  let text = param;
+  textArea.innerHTML = text;
+  let index = 0;
+  textArea.innerHTML = '';
+  let interval = setInterval(function() {
+    textArea.innerHTML += text[index++];
+    if (index === text.length) {
+      clearInterval(interval);
+    }
+  }, 20);
 }
-
-ajaxRequest();
-
-// const domElem = {
-//   txtDisplay : document.querySelector('.Screen_dialog_txt'),
-// }
-//
-// let text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
-//
-// domElem.txtDisplay.innerHTML = text;
-//
-// let index = 0;
-// domElem.txtDisplay.innerHTML = '';
-//
-// let interval = setInterval(function() {
-//   domElem.txtDisplay.innerHTML += text[index++];
-//   if (index === text.length) {
-//     clearInterval(interval);
-//   }
-// }, 20);

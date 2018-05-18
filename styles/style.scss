@@ -2,10 +2,12 @@
 @import './global/reset';
 @import './global/variables';
 
+
 // mixins
 @import './mixins/forsize';
 
 // partials
+@import './partials/start';
 @import './partials/map';
 
 * {
