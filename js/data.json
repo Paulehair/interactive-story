@@ -170,7 +170,7 @@
     },
     {
       "name": "La carte",
-      "description": "Vous êtes tombé sur un carte, absorbé dans votre réflexion vous n’avez pas entendu le capitaine qui s’approchait de vous par derrière. Il vous a exécuté sans sommation.",
+      "description": "Vous êtes tombé sur une carte, absorbé dans votre réflexion vous n’avez pas entendu le capitaine qui s’approchait de vous par derrière. Il vous a exécuté sans sommation.",
       "img_src": "",
       "message": "Vous avez perdu."
     },

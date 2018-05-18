@@ -44,7 +44,8 @@
     }
     &__Decison {
       position: absolute;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       bottom: 30;
       z-index: 10;
       &__firstChoice {
@@ -58,7 +59,7 @@
         font-family: 'Trade Winds', cursive;
         font-size: 17px;
         padding: 10px;
-        width: 70%;
+        width: 100%;
         border-radius: 3px;
         border: none;
         margin-top: 10px;

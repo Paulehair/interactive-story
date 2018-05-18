@@ -12,27 +12,25 @@ fetch('./js/data.json')
           start.classList.remove('is-open');
           displayText(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description);
           mapAppear(data.steps[index].img_src);
-          //firstChoice.innerHTML = data.steps[index].option1.description;
           firstChoice.addEventListener('click', function() {
             var text = data.steps[index].option1.description;
             index = data.steps[index].option1.next;
-            console.log(index);
-            if (index < 9) {
+            if (index <= 9) {
               displayText(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description);
               mapAppear(data.steps[index].img_src);
             } else {
-              displayText(data.steps[index].message);
+              displayText(data.steps[index].description);
               mapAppear(data.steps[index].img_src);
             }
           });
           secondChoice.addEventListener('click', function() {
             var text = data.steps[index].option2.description;
             index = data.steps[index].option2.next;
-            if (index < 9) {
+            if (index <= 9) {
               displayText(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description);
               mapAppear(data.steps[index].img_src);
             } else {
-              displayText(data.steps[index].message);
+              displayText(data.steps[index].description);
               mapAppear(data.steps[index].img_src);
             }
           });
