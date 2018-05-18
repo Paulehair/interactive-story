@@ -12,24 +12,30 @@ fetch('./js/data.json')
         start.addEventListener('click', function () {
           start.classList.remove('is-open');
           displayText(data.steps[0].description);
+          mapAppear(data.steps[0].img_src);
         });
       });
     }
   )
   .catch(function(err) {
-    console.log('Fetch Error :-S', err);
+    console.log('Fetch Error', err);
   });
 
 function displayText(param) {
   var textArea = document.querySelector('.Map__instructionsTxt');
-  let text = param;
+  var text = param;
   textArea.innerHTML = text;
-  let index = 0;
+  var index = 0;
   textArea.innerHTML = '';
-  let interval = setInterval(function() {
+  var interval = setInterval(function() {
     textArea.innerHTML += text[index++];
     if (index === text.length) {
       clearInterval(interval);
     }
   }, 20);
+}
+
+function mapAppear(param) {
+  var mapArea = document.querySelector('.Map__mapItem');
+  mapArea.src = param;
 }
