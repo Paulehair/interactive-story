@@ -40,11 +40,8 @@ table {
 
 .screen h1 {
   margin-bottom: 40px;
-  font-size: 42px; }
-
-.screen p {
-  font-size: 26px;
-  font-weight: 700; }
+  font-size: 42px;
+  color: #fff; }
 
 .is-open {
   display: flex;
@@ -59,17 +56,26 @@ table {
   bottom: 0;
   padding: 20px;
   text-align: center;
-  color: #000;
-  background: #fff; }
+  color: #fff;
+  background-image: url("../assets/img/background.svg"); }
 
 .screen button {
   display: block;
   padding: 20px 60px;
   margin: 60px 20px;
   font-size: 24px;
-  border: 2px solid #000;
+  font-family: 'Trade Winds', cursive;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
   background: none;
+  transition: ease 0.15s all;
   cursor: pointer; }
+  .screen button:focus {
+    outline: none; }
+  .screen button:hover {
+    background: #fff;
+    color: #000; }
 
 .Map {
   width: 100%;
