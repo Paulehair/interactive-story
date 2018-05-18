@@ -6,7 +6,6 @@ fetch('./js/data.json')
           response.status);
         return;
       }
-      // Examine the text in the response
       response.json().then(function(data) {
         var start = document.querySelector('#game-start');
         start.addEventListener('click', function () {

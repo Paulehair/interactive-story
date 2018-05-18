@@ -1,15 +1,16 @@
 .Map {
   width: 100%;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &__centerArea {
     width: 100%;
-    position: absolute;
+    position: relative;
   }
   &__mapContainer {
     width: 935px;
     height: 750px;
     position: relative;
-    overflow: hidden;
   }
   &__mapItem {
     width: 100%;
@@ -27,7 +28,8 @@
   }
   &__instructionsContainer {
     position: absolute;
-    right: -200;
+    right: -500;
+    top: 30;
     z-index: 10;
   }
   &__instructionsBox {

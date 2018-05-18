@@ -79,15 +79,16 @@ table {
 
 .Map {
   width: 100%;
-  position: relative; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .Map__centerArea {
     width: 100%;
-    position: absolute; }
+    position: relative; }
   .Map__mapContainer {
     width: 935px;
     height: 750px;
-    position: relative;
-    overflow: hidden; }
+    position: relative; }
   .Map__mapItem {
     width: 100%; }
   .Map__sceneContainer {
@@ -101,7 +102,8 @@ table {
     margin: 8px 0 0 5px; }
   .Map__instructionsContainer {
     position: absolute;
-    right: -200;
+    right: -500;
+    top: 30;
     z-index: 10; }
   .Map__instructionsBox {
     width: 50%; }
