@@ -77,44 +77,67 @@ table {
     background: #fff;
     color: #000; }
 
-.Map {
+.Container {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .Map__centerArea {
-    width: 100%;
-    position: relative; }
-  .Map__mapContainer {
+  align-items: center;
+  width: 100%;
+  position: relative; }
+  .Container__Map {
     width: 935px;
     height: 750px;
     position: relative; }
-  .Map__mapItem {
-    width: 100%; }
-  .Map__sceneContainer {
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    top: 0; }
-  .Map__sceneImg {
-    width: 99%;
-    margin: 8px 0 0 5px; }
-  .Map__instructionsContainer {
-    position: absolute;
-    right: -500;
-    top: 30;
-    z-index: 10; }
-  .Map__instructionsBox {
-    width: 50%; }
-  .Map__instructionsTxt {
-    position: absolute;
-    top: 40;
-    left: 50;
-    width: 40%;
-    line-height: 25px; }
-  .Map__InstructionsImg {
-    width: 100%; }
+    .Container__Map__backgroundImg {
+      width: 100%; }
+    .Container__Map__sceneContainer {
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      top: 0; }
+    .Container__Map__sceneImg {
+      width: 99%;
+      margin: 8px 0 0 5px; }
+    .Container__Map__Instructions {
+      position: absolute;
+      margin-left: -200px;
+      top: 30;
+      z-index: 10; }
+      .Container__Map__Instructions__Box {
+        width: 50%; }
+      .Container__Map__Instructions__Txt {
+        position: absolute;
+        top: 40;
+        left: 50;
+        width: 40%;
+        line-height: 25px; }
+      .Container__Map__Instructions__Img {
+        width: 100%; }
+    .Container__Map__Decison {
+      position: absolute;
+      left: 0;
+      bottom: 30;
+      z-index: 10; }
+      .Container__Map__Decison__firstChoice {
+        font-size: 16px; }
+      .Container__Map__Decison__secondChoice {
+        font-size: 16px; }
+      .Container__Map__Decison__Btn {
+        font-family: 'Trade Winds', cursive;
+        font-size: 17px;
+        padding: 10px;
+        width: 70%;
+        border-radius: 3px;
+        border: none;
+        margin-top: 10px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        cursor: pointer; }
+        .Container__Map__Decison__Btn:focus {
+          outline: none; }
+        .Container__Map__Decison__Btn:hover {
+          background-color: rgba(0, 0, 0, 0.8); }
 
 * {
   box-sizing: border-box; }

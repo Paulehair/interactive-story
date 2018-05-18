@@ -1,48 +1,77 @@
-.Map {
+.Container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  &__centerArea {
-    width: 100%;
-    position: relative;
-  }
-  &__mapContainer {
+  width: 100%;
+  position: relative;
+  &__Map {
     width: 935px;
     height: 750px;
     position: relative;
-  }
-  &__mapItem {
-    width: 100%;
-  }
-  &__sceneContainer {
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    top: 0;
-  }
-  &__sceneImg {
-    width: 99%;
-    margin: 8px 0 0 5px;
-  }
-  &__instructionsContainer {
-    position: absolute;
-    right: -500;
-    top: 30;
-    z-index: 10;
-  }
-  &__instructionsBox {
-    width: 50%;
-  }
-  &__instructionsTxt {
-    position: absolute;
-    top: 40;
-    left: 50;
-    width: 40%;
-    line-height: 25px;
-  }
-  &__InstructionsImg {
-    width: 100%;
+    &__backgroundImg {
+      width: 100%;
+    }
+    &__sceneContainer {
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      top: 0;
+    }
+    &__sceneImg {
+      width: 99%;
+      margin: 8px 0 0 5px;
+    }
+    &__Instructions {
+      position: absolute;
+      margin-left: -200px;
+      top: 30;
+      z-index: 10;
+      &__Box {
+        width: 50%;
+      }
+      &__Txt {
+        position: absolute;
+        top: 40;
+        left: 50;
+        width: 40%;
+        line-height: 25px;
+      }
+      &__Img {
+        width: 100%;
+      }
+    }
+    &__Decison {
+      position: absolute;
+      left: 0;
+      bottom: 30;
+      z-index: 10;
+      &__firstChoice {
+        font-size: 16px;
+
+      }
+      &__secondChoice {
+        font-size: 16px;
+      }
+      &__Btn {
+        font-family: 'Trade Winds', cursive;
+        font-size: 17px;
+        padding: 10px;
+        width: 70%;
+        border-radius: 3px;
+        border: none;
+        margin-top: 10px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
   }
 }
