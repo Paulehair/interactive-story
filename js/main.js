@@ -19,30 +19,23 @@ var firstChoice = document.querySelector('#firstChoice');
 var secondChoice = document.querySelector('#secondChoice');
 var index = 0;
 
+function typing(text) {
+  if (text.length) {
+    textArea.innerHTML += text[0];
+    setTimeout(function () {
+      text = text.substring(1);
+      typing(text)
+    }, 10);
+  }
+}
+
 function displayItems(param1, param2, param3, param4) {
-  textArea.innerHTML = param1;
+  textArea.innerHTML = "";
+  typing(param1);
   firstChoice.innerHTML = param2;
   secondChoice.innerHTML = param3;
   mapArea.src = param4;
 }
-
-function game(index) {
-  if(index <= 9) {
-    displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
-    firstChoice.addEventListener('click', function() {
-      index = data.steps[index].option1.next;
-      displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
-    });
-    secondChoice.addEventListener('click', function() {
-      index = data.steps[index].option2.next;
-      displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
-    });
-  } else {
-    textArea.innerHTML = data.steps[index].description;
-    firstChoice.innerHTML = data.steps[index].message;
-  }
-}
-
 
 function startStory(data) {
   var start = document.querySelector('#game-start');
