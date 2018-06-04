@@ -6,36 +6,7 @@ fetch('./js/data.json')
           response.status);
         return;
       }
-      response.json().then(function(data) {
-        var start = document.querySelector('#game-start');
-        start.addEventListener('click', function () {
-          start.classList.remove('is-open');
-          displayText(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description);
-          mapAppear(data.steps[index].img_src);
-          firstChoice.addEventListener('click', function() {
-            var text = data.steps[index].option1.description;
-            index = data.steps[index].option1.next;
-            if (index <= 9) {
-              displayText(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description);
-              mapAppear(data.steps[index].img_src);
-            } else {
-              displayText(data.steps[index].description);
-              mapAppear(data.steps[index].img_src);
-            }
-          });
-          secondChoice.addEventListener('click', function() {
-            var text = data.steps[index].option2.description;
-            index = data.steps[index].option2.next;
-            if (index <= 9) {
-              displayText(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description);
-              mapAppear(data.steps[index].img_src);
-            } else {
-              displayText(data.steps[index].description);
-              mapAppear(data.steps[index].img_src);
-            }
-          });
-        });
-      });
+      response.json().then(startStory);
     }
   )
   .catch(function(err) {
@@ -46,15 +17,66 @@ var textArea = document.querySelector('.Container__Map__Instructions__Txt');
 var mapArea = document.querySelector('.Container__Map__sceneImg');
 var firstChoice = document.querySelector('#firstChoice');
 var secondChoice = document.querySelector('#secondChoice');
-var firstChoiceArea = document.querySelector('.Container__Map__Decison__firstChoiceTxt');
-var secondChoiceArea = document.querySelector('.Container__Map__Decison__secondChoiceTxt');
 var index = 0;
+
+function displayItems(param1, param2, param3, param4) {
+  textArea.innerHTML = param1;
+  firstChoice.innerHTML = param2;
+  secondChoice.innerHTML = param3;
+  mapArea.src = param4;
+}
+
+function game(index) {
+  if(index <= 9) {
+    displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
+    firstChoice.addEventListener('click', function() {
+      index = data.steps[index].option1.next;
+      displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
+    });
+    secondChoice.addEventListener('click', function() {
+      index = data.steps[index].option2.next;
+      displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
+    });
+  } else {
+    textArea.innerHTML = data.steps[index].description;
+    firstChoice.innerHTML = data.steps[index].message;
+  }
+}
+
+
+function startStory(data) {
+  var start = document.querySelector('#game-start');
+  start.addEventListener('click', function () {
+    start.classList.remove('is-open');
+    displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
+    firstChoice.addEventListener('click', function() {
+      index = data.steps[index].option1.next;
+      if (index <= 9) {
+        displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
+      } else {
+        textArea.innerHTML = data.steps[index].description;
+        firstChoice.innerHTML = data.steps[index].message;
+        secondChoice.remove();
+        }
+    });
+    secondChoice.addEventListener('click', function() {
+      index = data.steps[index].option2.next;
+      if (index <= 9) {
+        displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
+      } else {
+        textArea.innerHTML = data.steps[index].description;
+        firstChoice.innerHTML = data.steps[index].message;
+        secondChoice.remove();
+        }
+    });
+  });
+}
+
 
 // function displayText(param) {
 //   var text = param;
-//   textArea.innerHTML = text;
 //   var i = 0;
-//   textArea.innerHTML = '';
+//   param.innerHTML = '';
 //   var interval = setInterval(function() {
 //     textArea.innerHTML += text[i++];
 //     if (i === text.length) {
@@ -62,16 +84,3 @@ var index = 0;
 //     }
 //   }, 20);
 // }
-
-function displayText(param1, param2, param3) {
-  var text = param1;
-  textArea.innerHTML = text;
-  var text2 = param2;
-  firstChoice.innerHTML = text2;
-  var text3 = param3;
-  secondChoice.innerHTML = text3;
-}
-
-function mapAppear(param) {
-  mapArea.src = param;
-}
