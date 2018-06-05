@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,49 @@
   <link rel="stylesheet" href="styles/style.css">
   <title>Pirate Game</title>
 </head>
+
 <body>
   <div class="Container">
     <section id="game-start" class="screen is-open">
       <h1>Welcome to the pirate game</h1>
       <button id="start">Start now</button>
     </section>
-      <div class="Container__Map">
-        <div class="Container__Map__backgroundContainer">
-          <img class="Container__Map__backgroundImg" src="./assets/img/untitled-2.png" alt="">
-        </div>
-        <div class="Container__Map__sceneContainer">
-          <img src="" alt="" class="Container__Map__sceneImg">
-        </div>
-        <div class="Container__Map__Instructions">
-          <div class="Container__Map__Instructions__Box">
-            <p class="Container__Map__Instructions__Txt"></p>
-            <img class="Container__Map__Instructions__Img" src="./assets/img/text_background.png" alt="">
-          </div>
-        </div>
-        <div class="Container__Map__Decison">
-          <div class="Container__Map__Decison__firstChoice">
-            <button class="Container__Map__Decison__Btn" id="firstChoice"></button>
-          </div>
-          <div class="Container__Map__Decison__secondChoice">
-            <button class="Container__Map__Decison__Btn" id="secondChoice"></button>
-          </div>
+    <div class="Container__Map">
+      <div class="Container__Map__backgroundContainer">
+        <img class="Container__Map__backgroundImg" src="./assets/img/untitled-2.png" alt="">
+      </div>
+      <div class="Container__Map__sceneContainer">
+        <img src="" alt="" class="Container__Map__sceneImg">
+      </div>
+      <div class="Container__Map__Instructions">
+        <div class="Container__Map__Instructions__Box">
+          <p class="Container__Map__Instructions__Txt"></p>
+          <img class="Container__Map__Instructions__Img" src="./assets/img/text_background.png" alt="">
         </div>
       </div>
+      <div class="Container__Map__Decison">
+        <div class="Container__Map__Decison__firstChoice">
+          <button class="Container__Map__Decison__Btn" id="firstChoice"></button>
+        </div>
+        <div class="Container__Map__Decison__secondChoice">
+          <button class="Container__Map__Decison__Btn" id="secondChoice"></button>
+        </div>
+      </div>
+    </div>
+    <section id="game-end" class="end is-open">
+      <div class="end-img">
+        <img class="end-img-src" src="skull.png" alt="skull" title="skull">
+      </div>
+      <div class="end-msg">
+        <p class="end-msg-content"></p>
+        <p class="end-msg-lose"></p>
+      </div>
+      <div class="end-btn">
+        <button class="end-btn-retry" type="submit">Recommencer</button>
+      </div>
+    </section>
   </div>
   <script src="js/main.js"></script>
 </body>
+
 </html>

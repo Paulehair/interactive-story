@@ -22,7 +22,7 @@ var index = 0;
 function typing(text) {
   if (text.length) {
     textArea.innerHTML += text[0];
-    setTimeout(function () {
+    setTimeout(function() {
       text = text.substring(1);
       typing(text)
     }, 10);
@@ -38,9 +38,10 @@ function displayItems(param1, param2, param3, param4) {
 }
 
 function startStory(data) {
-  var start = document.querySelector('#game-start');
-  start.addEventListener('click', function () {
-    start.classList.remove('is-open');
+  var start = document.querySelector('#start');
+  var screen = document.querySelector('#game-start')
+  start.addEventListener('click', function() {
+    screen.classList.remove('is-open');
     displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
     firstChoice.addEventListener('click', function() {
       index = data.steps[index].option1.next;
@@ -50,7 +51,7 @@ function startStory(data) {
         textArea.innerHTML = data.steps[index].description;
         firstChoice.innerHTML = data.steps[index].message;
         secondChoice.remove();
-        }
+      }
     });
     secondChoice.addEventListener('click', function() {
       index = data.steps[index].option2.next;
@@ -60,20 +61,7 @@ function startStory(data) {
         textArea.innerHTML = data.steps[index].description;
         firstChoice.innerHTML = data.steps[index].message;
         secondChoice.remove();
-        }
+      }
     });
   });
 }
-
-
-// function displayText(param) {
-//   var text = param;
-//   var i = 0;
-//   param.innerHTML = '';
-//   var interval = setInterval(function() {
-//     textArea.innerHTML += text[i++];
-//     if (i === text.length) {
-//       clearInterval(interval);
-//     }
-//   }, 20);
-// }

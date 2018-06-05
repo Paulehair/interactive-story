@@ -36,7 +36,8 @@ table {
   border-spacing: 0; }
 
 .screen {
-  display: none; }
+  display: none;
+  width: 100vw; }
 
 .screen h1 {
   margin-bottom: 40px;
@@ -101,7 +102,7 @@ table {
       margin: 8px 0 0 5px; }
     .Container__Map__Instructions {
       position: absolute;
-      margin-left: -200px;
+      margin-left: -10%;
       top: 30;
       z-index: 10; }
       .Container__Map__Instructions__Box {
@@ -150,7 +151,6 @@ html {
 body {
   font-family: 'Trade Winds', cursive;
   font-size: 18px;
-  background-image: url("../assets/img/background.svg");
-  margin: 20px 0 0 50px; }
+  background-image: url("../assets/img/background.svg"); }
 
 /*# sourceMappingURL=style.css.map */
