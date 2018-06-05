@@ -1,5 +1,5 @@
 .open {
-  display: block;
+  display: none;
   height: 100vh;
 }
 
@@ -8,14 +8,15 @@
     position: relative;
     padding-top: 20px;
     &-src{
+      width: 40%;
       position: absolute;
       top: 0;
-      left: -30%;
+      left: 30%;
       animation: laugh 0.2s alternate infinite;
     }
   }
   &-msg {
-    margin-top: 520px;
+    margin-top: 500px;
     color: #fff;
     font-size: 14px;
     text-align: center;

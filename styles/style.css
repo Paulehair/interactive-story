@@ -149,19 +149,20 @@ table {
           background-color: rgba(0, 0, 0, 0.8); }
 
 .open {
-  display: block;
+  display: none;
   height: 100vh; }
 
 .end-img {
   position: relative;
   padding-top: 20px; }
   .end-img-src {
+    width: 40%;
     position: absolute;
     top: 0;
-    left: -30%;
+    left: 30%;
     animation: laugh 0.2s alternate infinite; }
 .end-msg {
-  margin-top: 520px;
+  margin-top: 500px;
   color: #fff;
   font-size: 14px;
   text-align: center; }

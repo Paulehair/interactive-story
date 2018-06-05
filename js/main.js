@@ -48,9 +48,10 @@ function startStory(data) {
       if (index <= 9) {
         displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
       } else {
-        textArea.innerHTML = data.steps[index].description;
-        firstChoice.innerHTML = data.steps[index].message;
-        secondChoice.remove();
+        // textArea.innerHTML = data.steps[index].description;
+        // firstChoice.innerHTML = data.steps[index].message;
+        // secondChoice.remove();
+        displayEnd(data.steps[index].description);
       }
     });
     secondChoice.addEventListener('click', function() {
@@ -58,10 +59,26 @@ function startStory(data) {
       if (index <= 9) {
         displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
       } else {
-        textArea.innerHTML = data.steps[index].description;
-        firstChoice.innerHTML = data.steps[index].message;
-        secondChoice.remove();
+        // textArea.innerHTML = data.steps[index].description;
+        // firstChoice.innerHTML = data.steps[index].message;
+        // secondChoice.remove();
+        displayEnd(data.steps[index].description);
       }
     });
   });
+}
+
+function displayEnd(msg) {
+  var map = document.querySelector('.Container__Map');
+  var end = document.querySelector('#game-end');
+  var endStory = document.querySelector('#end-msg-story');
+  var winLose = document.querySelector('#winLose');
+  map.style.display = 'none';
+  end.style.display = 'block';
+  endStory.innerHTML = msg;
+  if (index == 12) {
+    winLose.innerHTML = "Vous avez gagné !"
+  } else {
+    winLose.innerHTML = "Vous avez perdu !"
+  }
 }
