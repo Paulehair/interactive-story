@@ -1,10 +1,51 @@
-.end {
-  &-img{
-    &-src{}
+.open {
+  display: block;
+  height: 100vh;
+}
+
+.end {
+  &-img {
+    position: relative;
+    padding-top: 20px;
+    &-src{
+      position: absolute;
+      top: 0;
+      left: -30%;
+      animation: laugh 0.2s alternate infinite;
+    }
   }
-  &-msg{
-    &-content{}
-    &-lose{}
+  &-msg {
+    margin-top: 520px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
   }
-  &-btn{}
+  &-btn {
+    text-align: center;
+    &-retry{
+    display: inline-block;
+    padding: 20px 60px;
+    margin: 60px 20px;
+    font-size: 24px;
+    font-family: 'Trade Winds', cursive;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background: none;
+    transition: ease 0.15s all;
+    cursor: pointer;
+    }
+    &-retry:hover{
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+@keyframes laugh {
+  from {
+    padding-top: 20px;
+  }
+  to {
+    padding-top: 25px;
+  }
 }
