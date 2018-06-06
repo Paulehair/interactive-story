@@ -93,6 +93,7 @@ table {
   width: 100%;
   position: relative; }
   .Container__Map {
+    opacity: 0;
     width: 935px;
     height: 750px;
     position: relative; }
@@ -107,6 +108,25 @@ table {
     .Container__Map__sceneImg {
       width: 99%;
       margin: 8px 0 0 5px; }
+    .Container__Map__crossContainerFirstChoice {
+      width: 7%;
+      position: absolute;
+      z-index: 2;
+      right: 100;
+      top: 500; }
+    .Container__Map__crossContainerSecondChoice {
+      width: 7%;
+      position: absolute;
+      z-index: 2;
+      right: 305;
+      top: 540; }
+    .Container__Map__crossImg {
+      width: 100%;
+      opacity: 0.6;
+      transition: ease 0.2s opacity;
+      cursor: pointer; }
+      .Container__Map__crossImg:hover {
+        opacity: 1; }
     .Container__Map__Instructions {
       position: absolute;
       margin-left: -10%;
