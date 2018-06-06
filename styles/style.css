@@ -1,8 +1,16 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -11,7 +19,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -23,10 +32,7 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
-
+blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
@@ -36,7 +42,8 @@ table {
   border-spacing: 0; }
 
 .screen {
-  display: none; }
+  display: none;
+  width: 100vw; }
 
 .screen h1 {
   margin-bottom: 40px;
@@ -80,6 +87,7 @@ table {
 .Container {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -101,7 +109,7 @@ table {
       margin: 8px 0 0 5px; }
     .Container__Map__Instructions {
       position: absolute;
-      margin-left: -200px;
+      margin-left: -10%;
       top: 30;
       z-index: 10; }
       .Container__Map__Instructions__Box {
@@ -140,6 +148,47 @@ table {
         .Container__Map__Decison__Btn:hover {
           background-color: rgba(0, 0, 0, 0.8); }
 
+.open {
+  display: none;
+  height: 100vh; }
+
+.end-img {
+  position: relative;
+  padding-top: 20px; }
+  .end-img-src {
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    animation: laugh 0.2s alternate infinite; }
+.end-msg {
+  margin-top: 500px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center; }
+.end-btn {
+  text-align: center; }
+  .end-btn-retry {
+    display: inline-block;
+    padding: 20px 60px;
+    margin: 60px 20px;
+    font-size: 24px;
+    font-family: 'Trade Winds', cursive;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background: none;
+    transition: ease 0.15s all;
+    cursor: pointer; }
+  .end-btn-retry:hover {
+    background-color: #fff;
+    color: #000; }
+
+@keyframes laugh {
+  from {
+    padding-top: 20px; }
+  to {
+    padding-top: 25px; } }
 * {
   box-sizing: border-box; }
 
@@ -150,7 +199,6 @@ html {
 body {
   font-family: 'Trade Winds', cursive;
   font-size: 18px;
-  background-image: url("../assets/img/background.svg");
-  margin: 20px 0 0 50px; }
+  background-image: url("../assets/img/background.svg"); }
 
 /*# sourceMappingURL=style.css.map */

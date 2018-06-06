@@ -1,6 +1,7 @@
 .Container {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -25,7 +26,7 @@
     }
     &__Instructions {
       position: absolute;
-      margin-left: -200px;
+      margin-left: -10%;
       top: 30;
       z-index: 10;
       &__Box {
