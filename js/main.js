@@ -18,6 +18,7 @@ var textArea = document.querySelector('.Container__Map__Instructions__Txt');
 var mapArea = document.querySelector('.Container__Map__sceneImg');
 var firstChoice = document.querySelector('#firstChoice');
 var secondChoice = document.querySelector('#secondChoice');
+var test = document.querySelector('.Container__Map__crossContainerFirstChoice');
 var screen = document.querySelector('#game-start');
 var end = document.querySelector('#game-end');
 var media = document.querySelector('.media');
@@ -37,10 +38,19 @@ function typing(text) {
 function displayItems(param1, param2, param3, param4) {
   textArea.innerHTML = "";
   typing(param1);
-  firstChoice.innerHTML = param2;
+  test.addEventListener('mouseenter', function() {
+    firstChoice.innerHTML = param2;
+    test.addEventListener('mouseleave', function () {
+      firstChoice.innerHTML = "";
+    })
+  });
   secondChoice.innerHTML = param3;
   mapArea.src = param4;
 }
+
+// test.addEventListener('mouseover', function() {
+//   firstChoice.innerHTML = param2;
+// });
 
 function setAudio(param) {
   media.appendChild(audio);
@@ -53,6 +63,7 @@ function setAudio(param) {
 function startStory(data) {
   var start = document.querySelector('#start');
   start.addEventListener('click', function() {
+    map.style.opacity = "1";
     screen.classList.remove('is-open');
     setAudio(data.steps[index].audio);
     displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
