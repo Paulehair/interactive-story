@@ -95,7 +95,7 @@ function startStory(data) {
       media.innerHTML = "";
       index = data.steps[index].option2.next;
       setAudio(data.steps[index].audio);
-      if (index <= 9) {
+      if (data.steps[index].endgame === 'false') {
         displayItems(data.steps[index].description, data.steps[index].img_src, data.steps[index].option1.location.top, data.steps[index].option1.location.right, data.steps[index].option2.location.top, data.steps[index].option2.location.right, data.steps[index].option1.description, data.steps[index].option2.description);
       } else {
         displayEnd(data.steps[index].description);
