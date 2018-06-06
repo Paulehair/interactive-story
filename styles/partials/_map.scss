@@ -7,6 +7,7 @@
   width: 100%;
   position: relative;
   &__Map {
+    opacity: 0;
     width: 935px;
     height: 750px;
     position: relative;
@@ -23,6 +24,29 @@
     &__sceneImg {
       width: 99%;
       margin: 8px 0 0 5px;
+    }
+    &__crossContainerFirstChoice {
+      width: 7%;
+      position: absolute;
+      z-index: 2;
+      right: 100;
+      top: 500;
+    }
+    &__crossContainerSecondChoice {
+      width: 7%;
+      position: absolute;
+      z-index: 2;
+      right: 305;
+      top: 540;
+    }
+    &__crossImg {
+      width: 100%;
+      opacity: 0.6;
+      transition: ease 0.2s opacity;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
     }
     &__Instructions {
       position: absolute;
