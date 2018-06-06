@@ -18,7 +18,7 @@ var textArea = document.querySelector('.Container__Map__Instructions__Txt');
 var mapArea = document.querySelector('.Container__Map__sceneImg');
 var firstChoice = document.querySelector('#firstChoice');
 var secondChoice = document.querySelector('#secondChoice');
-var test = document.querySelector('.Container__Map__crossContainerFirstChoice');
+var choice = document.querySelector('.Container__Map__Decison__txt');
 var screen = document.querySelector('#game-start');
 var end = document.querySelector('#game-end');
 var media = document.querySelector('.media');
@@ -31,26 +31,39 @@ function typing(text) {
     setTimeout(function() {
       text = text.substring(1);
       typing(text);
-    }, 10);
+    }, 5);
   }
 }
 
-function displayItems(param1, param2, param3, param4) {
-  textArea.innerHTML = "";
-  typing(param1);
-  test.addEventListener('mouseenter', function() {
-    firstChoice.innerHTML = param2;
-    test.addEventListener('mouseleave', function () {
-      firstChoice.innerHTML = "";
-    })
+function crossPosition(param3, param4, param5, param6, param7, param8) {
+  firstChoice.style.top = param3;
+  firstChoice.style.right = param4;
+  secondChoice.style.top = param5;
+  secondChoice.style.right = param6;
+  firstChoice.addEventListener('mouseover', function() {
+    choice.style.display = "block";
+    choice.innerHTML = param7;
+    firstChoice.addEventListener('mouseleave', function () {
+      choice.innerHTML = "";
+      choice.style.display = "none";
+    });
   });
-  secondChoice.innerHTML = param3;
-  mapArea.src = param4;
+  secondChoice.addEventListener('mouseover', function() {
+    choice.style.display = "block";
+    choice.innerHTML = param8;
+    secondChoice.addEventListener('mouseleave', function () {
+      choice.innerHTML = "";
+      choice.style.display = "none";
+    });
+  });
 }
 
-// test.addEventListener('mouseover', function() {
-//   firstChoice.innerHTML = param2;
-// });
+function displayItems(param1, param2, param3, param4, param5, param6, param7, param8) {
+  textArea.innerHTML = "";
+  typing(param1);
+  mapArea.src = param2;
+  crossPosition(param3, param4, param5, param6, param7, param8)
+}
 
 function setAudio(param) {
   media.appendChild(audio);
@@ -66,13 +79,13 @@ function startStory(data) {
     map.style.opacity = "1";
     screen.classList.remove('is-open');
     setAudio(data.steps[index].audio);
-    displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
+    displayItems(data.steps[index].description, data.steps[index].img_src, data.steps[index].option1.location.top, data.steps[index].option1.location.right, data.steps[index].option2.location.top, data.steps[index].option2.location.right, data.steps[index].option1.description, data.steps[index].option2.description);
     firstChoice.addEventListener('click', function() {
       media.innerHTML = "";
       index = data.steps[index].option1.next;
       setAudio(data.steps[index].audio);
       if (index <= 9) {
-        displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
+        displayItems(data.steps[index].description, data.steps[index].img_src, data.steps[index].option1.location.top, data.steps[index].option1.location.right, data.steps[index].option2.location.top, data.steps[index].option2.location.right, data.steps[index].option1.description, data.steps[index].option2.description);
       } else {
         displayEnd(data.steps[index].description);
         restartGame();
@@ -83,7 +96,7 @@ function startStory(data) {
       index = data.steps[index].option2.next;
       setAudio(data.steps[index].audio);
       if (index <= 9) {
-        displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
+        displayItems(data.steps[index].description, data.steps[index].img_src, data.steps[index].option1.location.top, data.steps[index].option1.location.right, data.steps[index].option2.location.top, data.steps[index].option2.location.right, data.steps[index].option1.description, data.steps[index].option2.description);
       } else {
         displayEnd(data.steps[index].description);
         restartGame();

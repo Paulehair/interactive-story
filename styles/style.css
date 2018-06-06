@@ -66,6 +66,12 @@ table {
   color: #fff;
   background-image: url("../assets/img/background.svg"); }
 
+.start-container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  align-items: center; }
+
 .screen button {
   display: block;
   padding: 20px 60px;
@@ -98,7 +104,8 @@ table {
     height: 750px;
     position: relative; }
     .Container__Map__backgroundImg {
-      width: 100%; }
+      width: 100%;
+      height: 90%; }
     .Container__Map__sceneContainer {
       width: 100%;
       position: absolute;
@@ -111,15 +118,11 @@ table {
     .Container__Map__crossContainerFirstChoice {
       width: 7%;
       position: absolute;
-      z-index: 2;
-      right: 100;
-      top: 500; }
+      z-index: 2; }
     .Container__Map__crossContainerSecondChoice {
       width: 7%;
       position: absolute;
-      z-index: 2;
-      right: 305;
-      top: 540; }
+      z-index: 2; }
     .Container__Map__crossImg {
       width: 100%;
       opacity: 0.6;
@@ -152,7 +155,8 @@ table {
         font-size: 16px; }
       .Container__Map__Decison__secondChoice {
         font-size: 16px; }
-      .Container__Map__Decison__Btn {
+      .Container__Map__Decison__txt {
+        display: none;
         font-family: 'Trade Winds', cursive;
         font-size: 17px;
         padding: 10px;
@@ -160,13 +164,8 @@ table {
         border-radius: 3px;
         border: none;
         margin-top: 10px;
-        background-color: rgba(0, 0, 0, 0.4);
-        color: #fff;
-        cursor: pointer; }
-        .Container__Map__Decison__Btn:focus {
-          outline: none; }
-        .Container__Map__Decison__Btn:hover {
-          background-color: rgba(0, 0, 0, 0.8); }
+        background-color: white;
+        color: #000; }
 
 .open {
   display: none;
