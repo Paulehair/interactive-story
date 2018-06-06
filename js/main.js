@@ -20,6 +20,8 @@ var firstChoice = document.querySelector('#firstChoice');
 var secondChoice = document.querySelector('#secondChoice');
 var screen = document.querySelector('#game-start');
 var end = document.querySelector('#game-end');
+var media = document.querySelector('.media');
+var audio = document.createElement('audio');
 var index = 0;
 
 function typing(text) {
@@ -40,14 +42,24 @@ function displayItems(param1, param2, param3, param4) {
   mapArea.src = param4;
 }
 
+function setAudio(param) {
+  media.appendChild(audio);
+  audio.src = param;
+  audio.setAttribute("autoplay", "");
+  audio.setAttribute("loop", "");
+  audio.setAttribute("controls", "");
+}
+
 function startStory(data) {
   var start = document.querySelector('#start');
   start.addEventListener('click', function() {
     screen.classList.remove('is-open');
+    setAudio(data.steps[index].audio);
     displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
     firstChoice.addEventListener('click', function() {
+      media.innerHTML = "";
       index = data.steps[index].option1.next;
-      console.log(index);
+      setAudio(data.steps[index].audio);
       if (index <= 9) {
         displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
       } else {
@@ -56,8 +68,9 @@ function startStory(data) {
       }
     });
     secondChoice.addEventListener('click', function() {
+      media.innerHTML = "";
       index = data.steps[index].option2.next;
-      console.log(index);
+      setAudio(data.steps[index].audio);
       if (index <= 9) {
         displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
       } else {

@@ -4,6 +4,7 @@
       "name": "Le bateau",
       "description": "Des pirates ont volé un bijou à votre famille, vous vous êtes fixé comme mission de récupérer ce bijou volé sur leur vaisseau, le Long Ben. Lorsque vous arrivez au port un pirate dort à côté de la passerelle qui accède au pont.",
       "img_src": "./assets/img/bateau.png",
+      "audio": "./assets/audio/harbor.wav",
       "option1": {
         "description": "Vous pouvez tenter de passer silencieusement à côté de lui en prenant le risque de le réveiller",
         "location": "1200",
@@ -19,6 +20,7 @@
       "name": "Le pont inférieur",
       "description": "Vous êtes sur le pont inférieur du Long Ben, caché derrière un canon, mais des pirates marchent dans votre direction. A vos pieds se trouve un corde reliée à un tas de boulets de canon. Vous tirez dessus d’un coup sec. Les boulets se mettent à rouler sur le pont dans tous les sens. Vous disposez de quelques secondes pour vous enfuir.",
       "img_src": "./assets/img/pont-inf-final.png",
+      "audio": "./assets/audio/footsteps-outside.wav",
       "option1": {
         "description": "En courant vers la droite vous pourrez prendre un escalier",
         "location": "1200",
@@ -34,6 +36,7 @@
       "name": "La cale",
       "description": "Vous êtes dans la cale où l’on conserve la poudre à canon. Une lampe à huile est tombée et a allumé plusieurs trainées de poudre. Seulement l’une de ces trainées mène aux tonneaux de poudre. Trouvez laquelle pour empêcher le bateau d’exploser.",
       "img_src": "./assets/img/cale-final.png",
+      "audio": "./assets/audio/boat-inside.wav",
       "option1": {
         "description": "Vous êtes vivant ! Vous pouvez emprunter l’escalier à votre gauche.",
         "location": "1200",
@@ -49,6 +52,7 @@
       "name": "Le pont supérieur",
       "description": "Vous arrivez sur le pont supérieur mais des pirates montent la garde !",
       "img_src": "",
+      "audio": "./assets/audio/outside-battle-away.wav",
       "option1": {
         "description": "Vous pouvez tenter la discrétion et prendre la porte qui mène sous le pont",
         "location": "1200",
@@ -64,6 +68,7 @@
       "name": "Le cockpit",
       "description": "Vous êtes dans le cockpit, devant vous se trouve le gouvernail. Celui-ci est emmêlé  à un cordage. Le bateau se dirige droit vers des rochers ! Si vous voulez rester en vie, trouvez de quoi couper cette corde.",
       "img_src": "./assets/img/cockpit-final-fin.png",
+      "audio": "./assets/audio/cockpit.wav",
       "option1": {
         "description": "Vous êtes en sécurité. Vous pouvez quitter le cockpit sans inquiétude. Une jolie porte sur votre droite semble mener à une cabine",
         "location": "1200",
@@ -79,6 +84,7 @@
       "name": "L'équipage",
       "description": "Vous arrivez là oû dort l’équipage. Vous entendez les pirates ronfler dans leur hamac. Les lattes en bois semblent fatiguées et risquent de craquer.",
       "img_src": "./assets/img/sleeping.png",
+      "audio": "./assets/audio/fart.wav",
       "option1": {
         "description": "Vous décidez de la jouer discret et de sortir par la porte située sur la gauche.",
         "location": "1200",
@@ -94,6 +100,7 @@
       "name": "La planche",
       "description": "Les pirates vous ont repéré, vous vous êtes fait prendre comme un bleu ! Ils vous forcent à marcher sur la planche pour que vous vous noyiez dans l’eau. Vous connaissiez cette tradition pirate mais ne pensiez pas en être victime un jour. Des cordages pendent non loin de la planche, au-dessus de l’eau. En sautant, vous pourriez en attraper un et vous balancer plus loin sur le pont. Vous sautez.",
       "img_src": "",
+      "audio": "./assets/audio/evil-laugh.wav",
       "option1": {
         "description": "Vous lâchez au bout d’une seconde.",
         "location": "1200",
@@ -107,8 +114,9 @@
     },
     {
       "name": "La bataille",
-      "description": "Des pirates passent à l’abordage ! (mdr on est toujours dans le port) C’est la débandade sur le pont. Vous profitez du chaos pour vous faire la malle.",
+      "description": "Des pirates passent à l’abordage ! C’est la débandade sur le pont. Vous profitez du chaos pour vous faire la malle.",
       "img_src": "",
+      "audio": "./assets/audio/battle.wav",
       "option1": {
         "description": "Vous courrez jusqu’à la proue du vaisseau en prenant le petit escalier",
         "location": "1200",
@@ -124,6 +132,7 @@
       "name": "La cabine du Capitaine",
       "description": "Vous êtes dans la cabine du capitaine. Oups ! Vous l’entendez siffler, il est en train de se changer derrière le paravent ! Vite, trouvez sa jambe de bois pour la jeter par le sabord. Ainsi, il ne pourra plus vous suivre.",
       "img_src": "",
+      "audio": "./assets/audio/whitle.wav",
       "option1": {
         "description": "Une porte au fond de la cabine attire votre attention. Vous décidez de vous y rendre sur la pointe des pieds.",
         "location": "1200",
@@ -139,6 +148,7 @@
       "name": "L'armurerie",
       "description": "Vous êtes arrivé là oû les pirates entreposent leurs armes.",
       "img_src": "./assets/img/weapons-final.png",
+      "audio": "./assets/audio/weapons.wav",
       "option1": {
         "description": "Vous décidez de jeter toutes les armes par dessus bord.",
         "location": "1200",
@@ -154,30 +164,35 @@
       "name": "Le feu",
       "description": "Les pirates vous ont attrapé, ils vous ont torturé jusqu’à ce que mort s’ensuive.",
       "img_src": "",
+      "audio": "./assets/audio/death_noise.wav",
       "message": "Vous avez perdu."
     },
     {
       "name": "La proue",
       "description": "Vous êtes arrivé à l’avant du navire. La figure de proue a fière allure. Elle est décorée d’énormes joyaux. Saurez vous reconnaitre votre bijou de famille incrusté dans le bois?",
       "img_src": "",
+      "audio": "./assets/audio/harbor.wav",
       "message": "Vous avez gagné !"
     },
     {
       "name": "Le pirate",
       "description": "Un pirate vous barre le chemin et vous tranche la gorge.",
       "img_src": "",
+      "audio": "./assets/audio/death_noise.wav",
       "message": "Vous avez perdu."
     },
     {
       "name": "La carte",
       "description": "Vous êtes tombé sur une carte, absorbé dans votre réflexion vous n’avez pas entendu le capitaine qui s’approchait de vous par derrière. Il vous a exécuté sans sommation.",
       "img_src": "",
+      "audio": "./assets/audio/death_noise.wav",
       "message": "Vous avez perdu."
     },
     {
       "name": "L'eau'",
       "description": "En jetant les armes à l’eau votre pied s’est coincé dans une chaine, vous entrainant avec. Vous finissez noyé au fond de l’océan.",
       "img_src": "",
+      "audio": "./assets/audio/death_noise.wav",
       "message": "Vous avez perdu."
     }
   ]
