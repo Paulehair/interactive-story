@@ -7,12 +7,18 @@
       "audio": "./assets/audio/harbor.wav",
       "option1": {
         "description": "Vous pouvez tenter de passer silencieusement à côté de lui en prenant le risque de le réveiller",
-        "location": "1200",
+        "location": {
+          "top": "540",
+          "right": "305"
+        },
         "next": "1"
       },
       "option2": {
         "description": "Vous apercevez cependant un gros cordage relié à la poupe du bateau que vous pourriez escalader jusqu’au sabord. Attention cependant à ne pas tomber dans l’eau, vous seriez alors repéré",
-        "location": "1200",
+        "location": {
+          "top": "500",
+          "right": "100"
+        },
         "next": "2"
       }
     },
@@ -23,12 +29,18 @@
       "audio": "./assets/audio/footsteps-outside.wav",
       "option1": {
         "description": "En courant vers la droite vous pourrez prendre un escalier",
-        "location": "1200",
+        "location": {
+          "top": "100",
+          "right": "100"
+        },
         "next": "3"
       },
       "option2": {
         "description": "Mais vous pouvez choisir de courir vers la gauche où se trouve une petite porte",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "4"
       }
     },
@@ -39,12 +51,18 @@
       "audio": "./assets/audio/boat-inside.wav",
       "option1": {
         "description": "Vous êtes vivant ! Vous pouvez emprunter l’escalier à votre gauche.",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "4"
       },
       "option2": {
         "description": "vous enfoncer plus loin pour fouiller le reste de la cale.",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "5"
       }
     },
@@ -55,12 +73,18 @@
       "audio": "./assets/audio/outside-battle-away.wav",
       "option1": {
         "description": "Vous pouvez tenter la discrétion et prendre la porte qui mène sous le pont",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "6"
       },
       "option2": {
         "description": "Cependant vous entendez un grand bruit plus loin sur le pont. si vous en avez le courage, vous pouvez vous aventurer et aller voir ce qu’il s’y passe",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "7"
       }
     },
@@ -71,12 +95,18 @@
       "audio": "./assets/audio/cockpit.wav",
       "option1": {
         "description": "Vous êtes en sécurité. Vous pouvez quitter le cockpit sans inquiétude. Une jolie porte sur votre droite semble mener à une cabine",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "8"
       },
       "option2": {
         "description": "Sinon vous pouvez descendre sur le pont et voir ce qu’il s’y passe",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "6"
       }
     },
@@ -87,12 +117,18 @@
       "audio": "./assets/audio/fart.wav",
       "option1": {
         "description": "Vous décidez de la jouer discret et de sortir par la porte située sur la gauche.",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "8"
       },
       "option2": {
         "description": "Vous tentez votre chance et marchez sur la pointe des pieds entre les hamacs jusqu’à l’escalier situé à droite.",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "9"
       }
     },
@@ -103,12 +139,18 @@
       "audio": "./assets/audio/evil-laugh.wav",
       "option1": {
         "description": "Vous lâchez au bout d’une seconde.",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "10"
       },
       "option2": {
         "description": "Vous lâchez au bout de deux secondes.",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "11"
       }
     },
@@ -119,12 +161,18 @@
       "audio": "./assets/audio/battle.wav",
       "option1": {
         "description": "Vous courrez jusqu’à la proue du vaisseau en prenant le petit escalier",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "11"
       },
       "option2": {
         "description": "Vous courrez vers une autre partie du pont que les pirates ennemis n’ont pas encore atteinte.",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "12"
       }
     },
@@ -135,12 +183,18 @@
       "audio": "./assets/audio/whitle.wav",
       "option1": {
         "description": "Une porte au fond de la cabine attire votre attention. Vous décidez de vous y rendre sur la pointe des pieds.",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "13"
       },
       "option2": {
         "description": "Un escalier redescend sinon vers le pont.",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "10"
       }
     },
@@ -151,12 +205,18 @@
       "audio": "./assets/audio/weapons.wav",
       "option1": {
         "description": "Vous décidez de jeter toutes les armes par dessus bord.",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "14"
       },
       "option2": {
         "description": "Vous passez votre chemin et prenez la porte au fond de la salle.",
-        "location": "1200",
+        "location": {
+          "top": "0",
+          "right": "0"
+        },
         "next": "13"
       }
     },
