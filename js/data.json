@@ -91,7 +91,7 @@
     {
       "name": "Le cockpit",
       "description": "Vous êtes dans le cockpit, devant vous se trouve le gouvernail. Celui-ci est emmêlé  à un cordage. Le bateau se dirige droit vers des rochers ! Si vous voulez rester en vie, trouvez de quoi couper cette corde.",
-      "img_src": "",
+      "img_src": "./assets/img/cockpit-final-fin.png",
       "audio": "./assets/audio/cockpit.wav",
       "option1": {
         "description": "Vous êtes en sécurité. Vous pouvez quitter le cockpit sans inquiétude. Une jolie porte sur votre droite semble mener à une cabine",
@@ -113,7 +113,7 @@
     {
       "name": "L'équipage",
       "description": "Vous arrivez là oû dort l’équipage. Vous entendez les pirates ronfler dans leur hamac. Les lattes en bois semblent fatiguées et risquent de craquer.",
-      "img_src": "",
+      "img_src": "./assets/img/sleeping.png",
       "audio": "./assets/audio/fart.wav",
       "option1": {
         "description": "Vous décidez de la jouer discret et de sortir par la porte située sur la gauche.",
@@ -201,7 +201,7 @@
     {
       "name": "L'armurerie",
       "description": "Vous êtes arrivé là oû les pirates entreposent leurs armes.",
-      "img_src": "",
+      "img_src": "./assets/img/weapons-final.png",
       "audio": "./assets/audio/weapons.wav",
       "option1": {
         "description": "Vous décidez de jeter toutes les armes par dessus bord.",

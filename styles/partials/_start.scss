@@ -26,6 +26,13 @@
     background-image: url('../assets/img/background.svg');
 }
 
+.start-container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  align-items: center;
+}
+
 .screen button {
     display: block;
     padding: 20px 60px;
