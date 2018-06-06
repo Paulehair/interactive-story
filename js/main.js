@@ -27,7 +27,7 @@ function typing(text) {
     textArea.innerHTML += text[0];
     setTimeout(function() {
       text = text.substring(1);
-      typing(text)
+      typing(text);
     }, 10);
   }
 }
@@ -51,9 +51,6 @@ function startStory(data) {
       if (index <= 9) {
         displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
       } else {
-        // textArea.innerHTML = data.steps[index].description;
-        // firstChoice.innerHTML = data.steps[index].message;
-        // secondChoice.remove();
         displayEnd(data.steps[index].description);
         restartGame();
       }
@@ -64,9 +61,6 @@ function startStory(data) {
       if (index <= 9) {
         displayItems(data.steps[index].description, data.steps[index].option1.description, data.steps[index].option2.description, data.steps[index].img_src);
       } else {
-        // textArea.innerHTML = data.steps[index].description;
-        // firstChoice.innerHTML = data.steps[index].message;
-        // secondChoice.remove();
         displayEnd(data.steps[index].description);
         restartGame();
       }
