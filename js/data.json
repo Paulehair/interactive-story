@@ -15,7 +15,7 @@
         "next": "1"
       },
       "option2": {
-        "description": "Vous apercevez cependant un gros cordage relié à la poupe du bateau que vous pourriez escalader jusqu’au sabord. Attention cependant à ne pas tomber dans l’eau, vous seriez alors repéré",
+        "description": "Vous escaladez le cordage jusqu’au sabord, attention cependant à ne pas tomber dans l’eau, vous seriez repéré",
         "location": {
           "top": "500",
           "right": "100"
@@ -25,12 +25,12 @@
     },
     {
       "name": "Le pont inférieur",
-      "description": "Vous êtes sur le pont inférieur du Long Ben, caché derrière un canon, mais des pirates marchent dans votre direction. A vos pieds se trouve un corde reliée à un tas de boulets de canon. Vous tirez dessus d’un coup sec. Les boulets se mettent à rouler sur le pont dans tous les sens. Vous disposez de quelques secondes pour vous enfuir.",
+      "description": "Vous êtes sur le pont inférieur, caché derrière un canon, mais des pirates marchent dans votre direction. Vous tirez dessus d’un coup sec sur une corde à vos pieds et des boulets se mettent à rouler sur le pont dans tous les sens. Vous avez quelques secondes pour vous enfuir.",
       "img_src": "./assets/img/pont-inf-final.png",
       "audio": "./assets/audio/footsteps-outside.wav",
       "endgame": "false",
       "option1": {
-        "description": "En courant vers la gauche vous pourrez prendre un escalier",
+        "description": "Vers la gauche, en courant vous prenez un escalier",
         "location": {
           "top": "200",
           "right": "450"
@@ -38,7 +38,7 @@
         "next": "3"
       },
       "option2": {
-        "description": "Mais vous pouvez choisir de courir vers la droite où se trouve une petite porte",
+        "description": "Vers la droite, en prenant une une petite porte",
         "location": {
           "top": "230",
           "right": "300"
@@ -48,7 +48,7 @@
     },
     {
       "name": "La cale",
-      "description": "Vous êtes dans la cale où l’on conserve la poudre à canon. Une lampe à huile est tombée et a allumé plusieurs trainées de poudre. Seulement l’une de ces trainées mène aux tonneaux de poudre. Trouvez laquelle pour empêcher le bateau d’exploser.",
+      "description": "Vous êtes dans la cale où l’on conserve la poudre à canon. Une lampe à huile est tombée et a allumé plusieurs trainées de poudre.",
       "img_src": "./assets/img/cale-final.png",
       "audio": "./assets/audio/boat-inside.wav",
       "endgame": "false",
@@ -84,7 +84,7 @@
         "next": "6"
       },
       "option2": {
-        "description": "Cependant vous entendez un grand bruit plus loin sur le pont. si vous en avez le courage, vous pouvez vous aventurer et aller voir ce qu’il s’y passe",
+        "description": "Vous entendez un grand bruit plus loin sur le pont, vous vous y aventurez et allez voir ce qu’il s’y passe",
         "location": {
           "top": "0",
           "right": "0"
@@ -94,7 +94,7 @@
     },
     {
       "name": "Le cockpit",
-      "description": "Vous êtes dans le cockpit, devant vous se trouve le gouvernail. Celui-ci est emmêlé  à un cordage. Le bateau se dirige droit vers des rochers ! Si vous voulez rester en vie, trouvez de quoi couper cette corde.",
+      "description": "Vous êtes dans le cockpit, devant vous se trouve le gouvernail. Celui-ci est emmêlé à un cordage, trouvez de quoi couper cette corde.",
       "img_src": "./assets/img/cockpit-final-fin.png",
       "audio": "./assets/audio/cockpit.wav",
       "endgame": "false",
@@ -107,7 +107,7 @@
         "next": "8"
       },
       "option2": {
-        "description": "Vous décidez de descendre sur le pont et voir ce qu’il s’y passe",
+        "description": "Tant pis pour la corde, vous décidez de descendre sur le pont et voir ce qu’il s’y passe",
         "location": {
           "top": "120",
           "right": "250"
@@ -117,7 +117,7 @@
     },
     {
       "name": "L'équipage",
-      "description": "Vous arrivez là oû dort l’équipage. Vous entendez les pirates ronfler dans leur hamac. Les lattes en bois semblent fatiguées et risquent de craquer.",
+      "description": "Vous arrivez là où dort l’équipage. Vous entendez les pirates ronfler dans leur hamac. Les lattes en bois semblent fatiguées et risquent de craquer.",
       "img_src": "./assets/img/sleeping.png",
       "audio": "./assets/audio/fart.wav",
       "endgame": "false",
@@ -140,7 +140,7 @@
     },
     {
       "name": "La planche",
-      "description": "Les pirates vous ont repéré, vous vous êtes fait prendre comme un bleu ! Ils vous forcent à marcher sur la planche pour que vous vous noyiez dans l’eau. Vous connaissiez cette tradition pirate mais ne pensiez pas en être victime un jour. Des cordages pendent non loin de la planche, au-dessus de l’eau. En sautant, vous pourriez en attraper un et vous balancer plus loin sur le pont. Vous sautez.",
+      "description": "Les pirates vous ont repéré, direction la planche ! Des cordages pendent non loin, au-dessus de l’eau. En sautant, vous pourriez en attraper un et vous balancer plus loin sur le pont. Vous sautez.",
       "img_src": "",
       "audio": "./assets/audio/evil-laugh.wav",
       "endgame": "false",
@@ -186,7 +186,7 @@
     },
     {
       "name": "La cabine du Capitaine",
-      "description": "Vous êtes dans la cabine du capitaine. Oups ! Vous l’entendez siffler, il est en train de se changer derrière le paravent ! Vite, trouvez sa jambe de bois pour la jeter par le sabord. Ainsi, il ne pourra plus vous suivre.",
+      "description": "Vous êtes dans la cabine du capitaine ! Vous l’entendez siffler, il est en train de se changer derrière le paravent !",
       "img_src": "",
       "audio": "./assets/audio/whitle.wav",
       "endgame": "false",
