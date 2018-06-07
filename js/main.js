@@ -62,7 +62,7 @@ function displayItems(param1, param2, param3, param4, param5, param6, param7, pa
   textArea.innerHTML = "";
   typing(param1);
   mapArea.src = param2;
-  crossPosition(param3, param4, param5, param6, param7, param8)
+  crossPosition(param3, param4, param5, param6, param7, param8);
 }
 
 function setAudio(param) {

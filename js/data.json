@@ -72,22 +72,22 @@
     {
       "name": "Le pont supérieur",
       "description": "Vous arrivez sur le pont supérieur mais des pirates montent la garde !",
-      "img_src": "",
+      "img_src": "./assets/img/watch.png",
       "audio": "./assets/audio/outside-battle-away.wav",
       "endgame": "false",
       "option1": {
         "description": "Vous pouvez tenter la discrétion et prendre la porte qui mène sous le pont",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "200",
+          "right": "420"
         },
         "next": "6"
       },
       "option2": {
         "description": "Vous entendez un grand bruit plus loin sur le pont, vous vous y aventurez et allez voir ce qu’il s’y passe",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "150",
+          "right": "220"
         },
         "next": "7"
       }
@@ -141,22 +141,22 @@
     {
       "name": "La planche",
       "description": "Les pirates vous ont repéré, direction la planche ! Des cordages pendent non loin, au-dessus de l’eau. En sautant, vous pourriez en attraper un et vous balancer plus loin sur le pont. Vous sautez.",
-      "img_src": "",
+      "img_src": "./assets/img/planche.png",
       "audio": "./assets/audio/evil-laugh.wav",
       "endgame": "false",
       "option1": {
         "description": "Vous lâchez au bout d’une seconde.",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "500",
+          "right": "300"
         },
         "next": "10"
       },
       "option2": {
         "description": "Vous lâchez au bout de deux secondes.",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "500",
+          "right": "400"
         },
         "next": "11"
       }
@@ -164,22 +164,22 @@
     {
       "name": "La bataille",
       "description": "Des pirates passent à l’abordage ! C’est la débandade sur le pont. Vous profitez du chaos pour vous faire la malle.",
-      "img_src": "",
+      "img_src": "./assets/img/battle.png",
       "audio": "./assets/audio/battle.wav",
       "endgame": "false",
       "option1": {
         "description": "Vous courrez jusqu’à la proue du vaisseau en prenant le petit escalier",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "300",
+          "right": "50"
         },
         "next": "11"
       },
       "option2": {
         "description": "Vous courrez vers une autre partie du pont que les pirates ennemis n’ont pas encore atteinte.",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "200",
+          "right": "150"
         },
         "next": "12"
       }
@@ -187,22 +187,22 @@
     {
       "name": "La cabine du Capitaine",
       "description": "Vous êtes dans la cabine du capitaine ! Vous l’entendez siffler, il est en train de se changer derrière le paravent !",
-      "img_src": "",
+      "img_src": "./assets/img/captain.png",
       "audio": "./assets/audio/whitle.wav",
       "endgame": "false",
       "option1": {
         "description": "Une porte au fond de la cabine attire votre attention. Vous décidez de vous y rendre sur la pointe des pieds.",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "400",
+          "right": "850"
         },
         "next": "13"
       },
       "option2": {
         "description": "Un escalier redescend sinon vers le pont.",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "550",
+          "right": "100"
         },
         "next": "10"
       }
@@ -233,7 +233,6 @@
     {
       "name": "Le feu",
       "description": "Les pirates vous ont attrapé, ils vous ont torturé jusqu’à ce que mort s’ensuive.",
-      "img_src": "",
       "audio": "./assets/audio/death_noise.wav",
       "message": "Vous avez perdu.",
       "endgame": "true"
@@ -241,7 +240,6 @@
     {
       "name": "La proue",
       "description": "Vous êtes arrivé à l’avant du navire. La figure de proue a fière allure. Elle est décorée d’énormes joyaux. Saurez vous reconnaitre votre bijou de famille incrusté dans le bois?",
-      "img_src": "",
       "audio": "./assets/audio/harbor.wav",
       "message": "Vous avez gagné !",
       "endgame": "true"
@@ -249,7 +247,6 @@
     {
       "name": "Le pirate",
       "description": "Un pirate vous barre le chemin et vous tranche la gorge.",
-      "img_src": "",
       "audio": "./assets/audio/death_noise.wav",
       "message": "Vous avez perdu.",
       "endgame": "true"
@@ -257,7 +254,6 @@
     {
       "name": "La carte",
       "description": "Vous êtes tombé sur une carte, absorbé dans votre réflexion vous n’avez pas entendu le capitaine qui s’approchait de vous par derrière. Il vous a exécuté sans sommation.",
-      "img_src": "",
       "audio": "./assets/audio/death_noise.wav",
       "message": "Vous avez perdu.",
       "endgame": "true"
@@ -265,7 +261,6 @@
     {
       "name": "L'eau'",
       "description": "En jetant les armes à l’eau votre pied s’est coincé dans une chaine, vous entrainant avec. Vous finissez noyé au fond de l’océan.",
-      "img_src": "",
       "audio": "./assets/audio/death_noise.wav",
       "message": "Vous avez perdu.",
       "endgame": "true"

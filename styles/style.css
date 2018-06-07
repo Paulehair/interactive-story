@@ -179,13 +179,13 @@ table {
   .end-img-src {
     width: 40%;
     position: absolute;
-    top: 0;
+    top: 100;
     left: 30%;
     animation: laugh 0.2s alternate infinite; }
 .end-msg {
   margin-top: 500px;
   color: #fff;
-  font-size: 14px;
+  font-size: 25px;
   text-align: center; }
 .end-btn {
   text-align: center; }
