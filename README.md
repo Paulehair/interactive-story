@@ -1,4 +1,4 @@
-# interactive-story
+# THE PIRATE GAME
 =======
-## L'histoire
+## interactive-story
 ### Vous vous retrouvez sur un bateau de pirates, faites les bons choix pour suivivre !
