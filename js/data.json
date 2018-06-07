@@ -30,18 +30,18 @@
       "audio": "./assets/audio/footsteps-outside.wav",
       "endgame": "false",
       "option1": {
-        "description": "En courant vers la droite vous pourrez prendre un escalier",
+        "description": "En courant vers la gauche vous pourrez prendre un escalier",
         "location": {
-          "top": "100",
-          "right": "100"
+          "top": "200",
+          "right": "450"
         },
         "next": "3"
       },
       "option2": {
-        "description": "Mais vous pouvez choisir de courir vers la gauche où se trouve une petite porte",
+        "description": "Mais vous pouvez choisir de courir vers la droite où se trouve une petite porte",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "230",
+          "right": "300"
         },
         "next": "4"
       }
@@ -53,18 +53,18 @@
       "audio": "./assets/audio/boat-inside.wav",
       "endgame": "false",
       "option1": {
-        "description": "Vous êtes vivant ! Vous pouvez emprunter l’escalier à votre gauche.",
+        "description": "Cette trainée a l'air de mener à la poudre.",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "500",
+          "right": "30"
         },
         "next": "4"
       },
       "option2": {
-        "description": "vous enfoncer plus loin pour fouiller le reste de la cale.",
+        "description": "Vous vous enfoncez plus loin pour fouiller le reste de la cale.",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "80",
+          "right": "100"
         },
         "next": "5"
       }
@@ -99,18 +99,18 @@
       "audio": "./assets/audio/cockpit.wav",
       "endgame": "false",
       "option1": {
-        "description": "Vous êtes en sécurité. Vous pouvez quitter le cockpit sans inquiétude. Une jolie porte sur votre droite semble mener à une cabine",
+        "description": "Vous parvenez à couper la corde et prenez la porte sur votre droite qui semble mener à une cabine",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "550",
+          "right": "290"
         },
         "next": "8"
       },
       "option2": {
-        "description": "Sinon vous pouvez descendre sur le pont et voir ce qu’il s’y passe",
+        "description": "Vous décidez de descendre sur le pont et voir ce qu’il s’y passe",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "120",
+          "right": "250"
         },
         "next": "6"
       }
@@ -124,16 +124,16 @@
       "option1": {
         "description": "Vous décidez de la jouer discret et de sortir par la porte située sur la gauche.",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "350",
+          "right": "800"
         },
         "next": "8"
       },
       "option2": {
         "description": "Vous tentez votre chance et marchez sur la pointe des pieds entre les hamacs jusqu’à l’escalier situé à droite.",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "380",
+          "right": "80"
         },
         "next": "9"
       }
@@ -216,16 +216,16 @@
       "option1": {
         "description": "Vous décidez de jeter toutes les armes par dessus bord.",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "300",
+          "right": "100"
         },
         "next": "14"
       },
       "option2": {
         "description": "Vous passez votre chemin et prenez la porte au fond de la salle.",
         "location": {
-          "top": "0",
-          "right": "0"
+          "top": "400",
+          "right": "700"
         },
         "next": "13"
       }
