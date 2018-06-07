@@ -70,7 +70,6 @@ function setAudio(param) {
   audio.src = param;
   audio.setAttribute("autoplay", "");
   audio.setAttribute("loop", "");
-  audio.setAttribute("controls", "");
 }
 
 function startStory(data) {

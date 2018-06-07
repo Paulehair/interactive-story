@@ -34,7 +34,7 @@
     &__crossContainerSecondChoice {
       width: 7%;
       position: absolute;
-      z-index: 2;
+      z-index: 100;
     }
     &__crossImg {
       width: 100%;
@@ -50,14 +50,15 @@
       margin-left: -10%;
       top: 30;
       z-index: 10;
+      width: 50%;
       &__Box {
-        width: 50%;
+        width: 100%;
       }
       &__Txt {
         position: absolute;
         top: 40;
         left: 50;
-        width: 40%;
+        width: 80%;
         line-height: 25px;
       }
       &__Img {
@@ -68,7 +69,7 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      bottom: 30;
+      bottom: 100;
       z-index: 10;
       &__firstChoice {
         font-size: 16px;
@@ -88,6 +89,7 @@
         margin-top: 10px;
         background-color: white;
         color: #000;
+        text-align: center;
       }
     }
   }
