@@ -72,7 +72,7 @@
     {
       "name": "Le pont supérieur",
       "description": "Vous arrivez sur le pont supérieur mais des pirates montent la garde !",
-      "img_src": "",
+      "img_src": "./assets/img/watch.png",
       "audio": "./assets/audio/outside-battle-away.wav",
       "endgame": "false",
       "option1": {
@@ -141,7 +141,7 @@
     {
       "name": "La planche",
       "description": "Les pirates vous ont repéré, direction la planche ! Des cordages pendent non loin, au-dessus de l’eau. En sautant, vous pourriez en attraper un et vous balancer plus loin sur le pont. Vous sautez.",
-      "img_src": "",
+      "img_src": "./assets/img/planche.png",
       "audio": "./assets/audio/evil-laugh.wav",
       "endgame": "false",
       "option1": {
@@ -164,7 +164,7 @@
     {
       "name": "La bataille",
       "description": "Des pirates passent à l’abordage ! C’est la débandade sur le pont. Vous profitez du chaos pour vous faire la malle.",
-      "img_src": "",
+      "img_src": "./assets/img/battle.png",
       "audio": "./assets/audio/battle.wav",
       "endgame": "false",
       "option1": {
@@ -187,7 +187,7 @@
     {
       "name": "La cabine du Capitaine",
       "description": "Vous êtes dans la cabine du capitaine ! Vous l’entendez siffler, il est en train de se changer derrière le paravent !",
-      "img_src": "",
+      "img_src": "./assets/img/captain.png",
       "audio": "./assets/audio/whitle.wav",
       "endgame": "false",
       "option1": {
